@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "famchat",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/Users/kevinbarnes/Code/famchat/amplify/backend/api/famchat/schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 7
+    }
+  }
+}
