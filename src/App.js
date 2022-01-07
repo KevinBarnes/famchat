@@ -31,11 +31,12 @@ function App() {
     <div className="container">
       <div className="messages">
         <div className="messages-scroller">
-        {messages.map((message) => (
-            <div
+        {messages.map((message) => {
+            const baseClass = message.author === 'Kevin' ? 'message me' : 'message';
+            return (<div
               key={message.id}
-              className={message.author === 'Dave' ? 'message me' : 'message'}>{message.body}</div>
-          ))}
+              className={message.body.includes('?') ? `questionMsg ${baseClass}` : baseClass}>{message.body}</div>
+          )})}
         </div>
       </div>
       <div className="chat-bar">

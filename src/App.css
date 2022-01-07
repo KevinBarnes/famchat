@@ -86,3 +86,9 @@ html, body {
 .message.me {
   align-self: flex-end;
 }
+
+.message.me.questionMsg, .message.questionMsg {
+  border-style: dashed;
+  border-color: darkslategrey;
+  background-color: rgb(2, 97, 65);
+}
